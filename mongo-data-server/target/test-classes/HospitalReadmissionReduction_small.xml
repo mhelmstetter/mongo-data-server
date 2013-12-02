@@ -1,0 +1,74 @@
+<response>
+<row>
+<row _id="1" _uuid="47AA96B8-957E-46CA-9F00-1B7A59FAA2C9" _position="1" _address="http://data.medicare.gov/resource/_9n3s-kdb3/1">
+<hospital_name>SOUTHEAST ALABAMA MEDICAL CENTER</hospital_name>
+<provider_id>010001</provider_id>
+<state>AL</state>
+<measure_id>
+Acute Myocardial Infarction (AMI) 30-Day Readmissions
+</measure_id>
+<number_of_discharges>728</number_of_discharges>
+<readm_ratio>0.9664</readm_ratio>
+<predicted>17.1</predicted>
+<expected>17.7</expected>
+<number_of_readmissions>123</number_of_readmissions>
+<start_date>2008-07-01T00:00:00</start_date>
+<end_date>2011-06-30T00:00:00</end_date>
+</row>
+<row _id="2" _uuid="D35E6125-CE04-4994-8581-0683BA9839F8" _position="2" _address="http://data.medicare.gov/resource/_9n3s-kdb3/2">
+<hospital_name>SOUTHEAST ALABAMA MEDICAL CENTER</hospital_name>
+<provider_id>010001</provider_id>
+<state>AL</state>
+<measure_id>Heart Failure (HF) 30-Day Readmissions</measure_id>
+<number_of_discharges>894</number_of_discharges>
+<readm_ratio>0.9406</readm_ratio>
+<predicted>21.7</predicted>
+<expected>23.0</expected>
+<number_of_readmissions>190</number_of_readmissions>
+<start_date>2008-07-01T00:00:00</start_date>
+<end_date>2011-06-30T00:00:00</end_date>
+</row>
+<row _id="3" _uuid="7A5B16F5-6F5E-4598-B366-CEBE58A147CD" _position="3" _address="http://data.medicare.gov/resource/_9n3s-kdb3/3">
+<hospital_name>SOUTHEAST ALABAMA MEDICAL CENTER</hospital_name>
+<provider_id>010001</provider_id>
+<state>AL</state>
+<measure_id>Pneumonia (PN) 30-Day Readmissions</measure_id>
+<number_of_discharges>400</number_of_discharges>
+<readm_ratio>0.9137</readm_ratio>
+<predicted>15.2</predicted>
+<expected>16.6</expected>
+<number_of_readmissions>56</number_of_readmissions>
+<start_date>2008-07-01T00:00:00</start_date>
+<end_date>2011-06-30T00:00:00</end_date>
+</row>
+<row _id="4" _uuid="07048A92-C6C2-4CE9-8ABB-58DF0F7D0BF2" _position="4" _address="http://data.medicare.gov/resource/_9n3s-kdb3/4">
+<hospital_name>MARSHALL MEDICAL CENTER SOUTH</hospital_name>
+<provider_id>010005</provider_id>
+<state>AL</state>
+<measure_id>
+Acute Myocardial Infarction (AMI) 30-Day Readmissions
+</measure_id>
+<number_of_discharges>21</number_of_discharges>
+<footnote>18</footnote>
+<readm_ratio>N/A</readm_ratio>
+<predicted>N/A</predicted>
+<expected>N/A</expected>
+<number_of_readmissions>N/A</number_of_readmissions>
+<start_date>2008-07-01T00:00:00</start_date>
+<end_date>2011-06-30T00:00:00</end_date>
+</row>
+<row _id="5" _uuid="F7039BA0-7B39-46D0-9122-C8F615531535" _position="5" _address="http://data.medicare.gov/resource/_9n3s-kdb3/5">
+<hospital_name>MARSHALL MEDICAL CENTER SOUTH</hospital_name>
+<provider_id>010005</provider_id>
+<state>AL</state>
+<measure_id>Heart Failure (HF) 30-Day Readmissions</measure_id>
+<number_of_discharges>264</number_of_discharges>
+<readm_ratio>0.9126</readm_ratio>
+<predicted>22.9</predicted>
+<expected>25.1</expected>
+<number_of_readmissions>55</number_of_readmissions>
+<start_date>2008-07-01T00:00:00</start_date>
+<end_date>2011-06-30T00:00:00</end_date>
+</row>
+</row>
+</response>

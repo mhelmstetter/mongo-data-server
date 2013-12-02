@@ -1,0 +1,39 @@
+https://github.com/Spidertracks/spring-rest-api-demo
+
+
+Request interceptors
+http://stackoverflow.com/questions/12114214/what-could-be-causing-requestmappinghandlermapping-to-not-register-correctly
+
+Jackson -- CSV generator does not support Object values for properties
+https://github.com/FasterXML/jackson-dataformat-csv/issues/9
+
+https://github.com/beckchr/staxon
+
+
+API Doc tools
+=============-
+IO Docs https://github.com/mashery/iodocs  (requires Redis)
+
+
+Dataset Publshing Format
+========================
+
+https://github.com/cfpb/qu/wiki/Dataset-publishing-format
+
+
+
+
+http://usasearch.howto.gov/developer/recalls.html
+
+
+https://data.medicare.gov/api/views/96ug-zvyz/rows.json?accessType=DOWNLOAD
+
+
+XML
+====================
+http://www.fda.gov/DataSets/Recalls/RecallsDataSet.xml
+
+
+
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+
+	<mongo:mongo host="localhost" port="27017" />
+
+	<bean id="mongoFactoryBean" class="org.springframework.data.mongodb.core.MongoFactoryBean">
+		<property name="host" value="127.0.0.1" />
+		<property name="port" value="27017" />
+	</bean>
+
+	<bean id="mongoDbFactory"
+		class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
+		<constructor-arg name="mongo" ref="mongoFactoryBean" />
+		<constructor-arg name="databaseName" value="metadata" />
+	</bean>
+	
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+		<constructor-arg name="mongoConverter" ref="mappingConverter" />
+	</bean>
+
+	<mongo:mapping-converter mongo-template-ref="mongoTemplate">
+		<mongo:custom-converters base-package="com.mongodb.opendata.converter.json"></mongo:custom-converters>
+	</mongo:mapping-converter>
+
+	<mongo:repositories base-package="com.mongodb.opendata.repository"
+		mongo-template-ref="mongoTemplate"></mongo:repositories>
+
+	<bean id="readConverter"
+		class="com.mongodb.opendata.converter.json.DatasetReadConverter">
+	</bean>
+	<bean id="writeConverter"
+		class="com.mongodb.opendata.converter.json.DatasetWriteConverter">
+	</bean>
+
+	<context:component-scan base-package="com.mongodb.opendata.loader">
+	</context:component-scan>
+
+	<mongo:mapping-converter id="mappingConverter">
+		<mongo:custom-converters>
+			<mongo:converter ref="readConverter" />
+			<mongo:converter ref="writeConverter" />
+		</mongo:custom-converters>
+	</mongo:mapping-converter>
+
+
+
+
+
+</beans>
